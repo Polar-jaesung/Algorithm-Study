@@ -16,4 +16,14 @@ function solution (money){
     
 }
 
-console.log(solution(money));
+// 나이 출력 문제
+
+function ageFind(age){
+    let answer=0;
+
+    let realYear = age-1;
+
+    return answer = 2022-realYear;
+
+    // 1살 ; 22년 , 2살: 21년, 3살: 20년
+}
