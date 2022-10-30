@@ -27,3 +27,20 @@ function ageFind(age){
 
     // 1살 ; 22년 , 2살: 21년, 3살: 20년
 }
+
+// 배열 뒤집기 문제
+
+
+
+function solution(num_list) {
+    let answer = [];
+    let a=num_list.length-1;
+    
+
+    for(a; a>=0 ; a--){
+        
+        answer.push(num_list[a]);
+    }
+    
+    return answer
+}
