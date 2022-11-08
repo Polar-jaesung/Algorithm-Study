@@ -38,3 +38,16 @@ function solution(angle) {
         return 1
     }
 }
+
+function menu ( food,drink){
+    const price_food =12000;
+    const price_drink =2000;
+    if(food<10){
+        return (food*price_food) + (drink*price_drink);
+    }
+
+    else {
+        const remain_drink = drink -parseInt(food/10);
+        return (food*pce_food) + ( remain_drink*price_drink);
+    }
+}
