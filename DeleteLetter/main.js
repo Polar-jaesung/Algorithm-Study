@@ -48,6 +48,6 @@ function menu ( food,drink){
 
     else {
         const remain_drink = drink -parseInt(food/10);
-        return (food*pce_food) + ( remain_drink*price_drink);
+        return (food*price_food) + ( remain_drink*price_drink);
     }
 }
