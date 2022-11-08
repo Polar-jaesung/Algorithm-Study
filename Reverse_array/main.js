@@ -8,4 +8,13 @@ function reverse(quiz){
 
 }
 
-console.log(reverse(quiz));
+
+let star ='*';
+let num;
+
+function makeStar(){
+    
+    return star,star;
+}
+
+console.log(makeStar(2));
