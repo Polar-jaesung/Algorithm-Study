@@ -44,3 +44,28 @@ function solution(num_list) {
     
     return answer
 }
+
+
+let my_string='goodbye';
+let n=2;
+
+function solution(my_string, n) {
+    
+    var answer = '';
+    let cnt = 0;
+    
+    for(let i=0; i< my_string.length; i++){
+        const repeatStr = my_string[i];
+        let repeatCnt =0;
+
+        while (repeatCnt < n){
+            answer = answer + repeatStr;
+            repeatCnt++;
+        }
+        cnt ++;
+
+    }
+
+    
+    return answer;
+}
