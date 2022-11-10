@@ -89,7 +89,7 @@ const urgent_list = sick.filter(isFirst);
 let n;
 let cnt=0;
 function func(n){
- n=100;
+ 
 
 for(let i=1; i <=n ; i++){
     if(n%i===0){
