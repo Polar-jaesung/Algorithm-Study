@@ -53,4 +53,51 @@ function findEng (age){
     return spl.join('');
 }
 
-console.log(findEng(age));
+let sick =[3,10,7,44,30,1];
+
+function urgent(sick){
+    let cnt=1;
+    let order=0;
+    let newSick;
+ for(let i=0; i<sick.length; i++){
+    if (sick[i] >= order){
+        
+        order = sick[i];
+        
+        newSick[i]=cnt;
+    }
+
+   
+}
+
+
+
+cnt ++;
+
+function isFirst(elem){
+ if(elem === order)
+  return true;
+}
+
+const urgent_list = sick.filter(isFirst);
+
+ return ` ${sick} 하고 ${newSick[i]} ` 
+}
+
+// 순서쌍의 개수
+
+let n;
+let cnt=0;
+function func(n){
+ n=100;
+
+for(let i=1; i <=n ; i++){
+    if(n%i===0){
+        cnt++;
+    }
+}
+return cnt;
+
+}
+
+console.log(func());
