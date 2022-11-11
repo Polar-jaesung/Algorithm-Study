@@ -2,8 +2,31 @@
 function compare(num1,num2){
     return num1 ===num2 ? 1 : -1;
 }
-// 2. 분수의 덧셈 (숏코딩 완료)
 
+// 2. 분수의 덧셈 (숏코딩 완료)
+function solution(denum1, num1, denum2, num2) {
+    //분자 문모를 합친 값을 2개의 변수가 아닌 <한 배열에> 넣기(숏코딩)
+    let [denum, num] = [denum1*num2 + denum2*num1, num1*num2 ]
+    
+    while(true) {
+        let isContinue = false
+        const min = denum < num ? denum : num
+
+        for (let i=min; i>=2; i--) {
+            if (denum % i === 0 && num % i === 0) {
+                denum = denum / i
+                num = num / i
+                isContinue = true
+                break
+            }
+        }
+        if (!isContinue) {
+            break
+        }
+    }
+
+    return [ denum, num ]
+    }     
 
 
 
