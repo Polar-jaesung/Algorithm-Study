@@ -1,5 +1,8 @@
-
-
+// 1.숫자 비교하기 (숏코딩 완료)
+function compare(num1,num2){
+    return num1 ===num2 ? 1 : -1;
+}
+// 2. 분수의 덧셈 (숏코딩 완료)
 
 
 
