@@ -24,9 +24,13 @@ function solution(denum1, num1, denum2, num2) {
             break
         }
     }
-
     return [ denum, num ]
-    }     
+}     
+
+// 3. 배열 두 배 만들기
+function doubleArr(numbers) {
+    return answer= numbers.map(number => number*2);
+}
 
 
 
