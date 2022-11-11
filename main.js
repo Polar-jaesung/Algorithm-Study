@@ -1,4 +1,9 @@
 
+
+
+
+
+
 let people=4;
 
 function solution(people){
