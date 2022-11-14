@@ -1,4 +1,3 @@
-
 // 1. 프로그래머스 피자나눠먹기(3) (숏코딩 완료)
 function solution(slice, n) {
     return Math.ceil(n/slice)
@@ -6,14 +5,12 @@ function solution(slice, n) {
 
 
 
-// 배열의 평균값
+// 2. 배열의 평균값 (숏코딩 완료)
+let numbers=[1,2,3,4]
 function solution(numbers) {
-    let sum=0;
-    for(let i=0; i<numbers.length; i++){
-        
-        sum+=numbers[i];        
-    }
-    return sum/numbers.length;
+    const result =
+        numbers.reduce((a,b) => a+b,0)/ numbers.length;
+        return  result;
 }
 
 
