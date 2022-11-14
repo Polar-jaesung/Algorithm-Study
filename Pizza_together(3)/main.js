@@ -14,22 +14,15 @@ function solution(numbers) {
 }
 
 
-// 옷가게 할인 받기 
+// 3. 옷가게 할인 받기  (숏코딩 완료)
 function solution(price) {
-    
-    
-    if(price>=100000 && price <300000){
-        return Math.floor(price*95/100)
-    }
-    
-    else if(price >=300000 && price<500000){
-        return Math.floor(price*90/100)
-    }
-    
-    else if(price >=500000){
-         return Math.floor(price*0.8)
-    }
-    else{
-        return price
-    }
+    const result = (price>=100000 && price <300000)
+    ? Math.floor(price*95/100)
+    :(price >=300000 && price<500000)
+        ? Math.floor(price*90/100)
+        :(price >=500000)
+            ? Math.floor(price*0.8)
+            :price
+
+   return result
 }
