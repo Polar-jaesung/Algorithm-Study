@@ -33,15 +33,10 @@ function doubleArr(numbers) {
 }
 
 // 4. 중앙값 구하기
-
-
 function centerNum(array) { 
     const center = array.sort((a,b)=>(a-b))
     return center[Math.floor(array.length/2)]
   }
-
-
-
 
 let people=4;
 
