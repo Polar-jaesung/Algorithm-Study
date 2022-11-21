@@ -37,4 +37,18 @@ function findDot(dot) {
     return answer;
 }
 
-console.log(findDot(dot));
+// 4. 2차원으로 만들기
+
+let num_list=[1, 2, 3, 4, 5, 6, 7, 8, 9];
+let n=3;
+function twoArr(num_list, n) {
+    var answer = [];
+
+    // slice는 (a,b)일때 'a'번째 배열부터 'b-1'번째 배열까지 끊는다는 의미
+    for(let i=0; i<num_list.length; i = n+i){
+        answer.push( num_list.slice(i,i+n) );
+    }
+    return answer;
+}
+
+console.log(twoArr(num_list, n));
