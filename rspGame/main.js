@@ -39,8 +39,6 @@ function findDot(dot) {
 
 // 4. 2차원으로 만들기
 
-let num_list=[1, 2, 3, 4, 5, 6, 7, 8, 9];
-let n=3;
 function twoArr(num_list, n) {
     var answer = [];
 
@@ -50,5 +48,26 @@ function twoArr(num_list, n) {
     }
     return answer;
 }
+// 5. 공 던지기(해결 못함)ㅌ
+// 6. Get the Middle Character
 
-console.log(twoArr(num_list, n));
+let s="test"
+function getMiddle(s)
+{
+    let cut = s.split('');
+    if(cut.length % 2 ==0){
+        let point = Math.floor(cut.length / 2);
+        let result = cut.splice(point-1,2);
+        return result.join("");
+    }
+
+    else{
+        let point = cut.length /2;
+        let result = cut.splice(point,1);
+        return result.join("");
+    }
+//   짝수면 2개 , 홀수면 1개 (length를 찾으면 짝수일 경우 전체 길이가 홀수!)
+// 4개일경우 => length : 3 , 중간은 floor(length/2), +1
+// 7개일 경우 => length: 6, 중간은 
+// splice를 쓰면 되겠네
+}
