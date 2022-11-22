@@ -51,7 +51,7 @@ function twoArr(num_list, n) {
 // 5. 공 던지기(해결 못함)ㅌ
 // 6. Get the Middle Character
 
-let s="test"
+
 function getMiddle(s)
 {
     let cut = s.split('');
@@ -70,4 +70,14 @@ function getMiddle(s)
 // 4개일경우 => length : 3 , 중간은 floor(length/2), +1
 // 7개일 경우 => length: 6, 중간은 
 // splice를 쓰면 되겠네
+}
+
+// 7. Mumbling(직접 못풀었다) 확실히 외워버리자
+
+let s ="abcd"
+
+function accum(s) {
+	return s.split('')
+    .map((c, i) => (c.toUpperCase() + c.toLowerCase()
+    .repeat(i))).join('-');
 }
